@@ -2,7 +2,7 @@ operation = require '../../lib/operations/off_with'
 
 describe "/off_with", ->
   it "should have the correct name", ->
-    expect(operation.name).toEqual('Fuck Off With')
+    expect(operation.name).toEqual('Have fun With')
 
   it "should have the correct url", ->
     expect(operation.url).toEqual('/off-with/:behavior/:from')
@@ -32,13 +32,13 @@ describe "/off_with", ->
 
       req =
         params:
-          behavior: "the constant stupid emails to our team that we don't give a shit about!!"
+          behavior: "the constant emails to our team !!"
           from: 'Bubbles'
 
       func(req, 'RES')
       expect(output).toHaveBeenCalledWith(
         req,
         'RES',
-        "Fuck off with the constant stupid emails to our team that we don't give a shit about!!",
+        "Have Fun with the constant emails to our team !!",
         '- Bubbles'
       )

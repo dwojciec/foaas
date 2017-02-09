@@ -2,7 +2,7 @@ operation = require '../../lib/operations/off'
 
 describe "/off", ->
   it "should have the correct name", ->
-    expect(operation.name).toEqual('Fuck Off')
+    expect(operation.name).toEqual('Have Fun')
 
   it "should have the correct url", ->
     expect(operation.url).toEqual('/off/:name/:from')
@@ -39,6 +39,6 @@ describe "/off", ->
       expect(output).toHaveBeenCalledWith(
         req,
         'RES',
-        'Fuck off, TESTNAME.',
+        'have fun, TESTNAME.',
         '- TESTFROM'
       )
