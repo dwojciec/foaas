@@ -17,24 +17,20 @@
     <div class="container">
       <div class="hero-unit">
         <h1>HFAAS</h1>
-        <h2>iHave Fun As A Service</h2>
+        <h2>Have Fun As A Service</h2>
         <p><em>v1.1.0</em></p>
       </div>
     </div>
     <div class="container">
       <div class="content" style="margin-left:50px;">
         <h2 id="introduction">Introduction</h2>
-        <p>FOAAS (Fuck Off As A Service) provides a modern, RESTful, scalable solution to the common problem of telling people to have fun.</p>
-
-        <h2 id="donate">Donate</h2>
-
-        <p>FOAAS is a free API, and you can keep it that way by donating BitCoin: <strong><a href="bitcoin:1DgBYrFfGgpstEGBMBXZwQMgEoZfRbSBuS">1DgBYrFfGgpstEGBMBXZwQMgEoZfRbSBuS</a></strong></p>
+        <p>HFAAS (Have Fun As A Service) provides a modern, RESTful, scalable solution to the common problem of telling people to have fun.</p>
 
         <h2 id="api">API</h2>
 
         <h3 id="contentnegotiation">Content Negotiation</h3>
 
-        <p>FOAAS will respond to the following 'Accept:' values with appropriate content</p>
+        <p>HFAAS will respond to the following 'Accept:' values with appropriate content</p>
 
         <ul>
           <li>text/plain - Content will be returned as a plain string.</li>
@@ -57,7 +53,7 @@
             </tr>
             <tr>
                 <td>/version</td>
-                <td>Will return content with the current FOAAS version number.</td>
+                <td>Will return content with the current HFAAS version number.</td>
             </tr>
 
             <tr>
@@ -72,37 +68,17 @@
 
             <tr>
                 <td>/ing/:name/:from</td>
-                <td>Will return content of the form 'Having fun , :name. - :from', e.g. <a href='/ing/Tom/Chris' target='_blank'>/ing/Tom/Chris</a> will return 'Fucking have fun, Tom - Chris'</td>
+                <td>Will return content of the form 'Having fun , :name. - :from', e.g. <a href='/ing/Tom/Chris' target='_blank'>/ing/Tom/Chris</a> will return 'have fun, Tom - Chris'</td>
             </tr>
 
             <tr>
                 <td>/you/:name/:from</td>
-                <td>Will return content of the form 'Have fun, :name. - :from', e.g. <a href='/you/Tom/Chris' target='_blank'>/you/Tom/Chris</a> will return 'Fuck you, Tom - Chris'</td>
-            </tr>
-
-            <tr>
-                <td>/this/:from</td>
-                <td>Will return content of the form 'Have fun - :from', e.g. <a href='/this/Chris' target='_blank'>/this/Chris</a> will return 'Fuck this. - Chris'</td>
-            </tr>
-
-            <tr>
-                <td>/that/:from</td>
-                <td>Will return content of the form 'Fuck that. - :from', e.g. <a href='/that/Chris' target='_blank'>/that/Chris</a> will return 'Fuck that. - Chris'</td>
-            </tr>
-
-            <tr>
-                <td>/everything/:from</td>
-                <td>Will return content of the form 'Fuck everything. - :from', e.g. <a href='/everything/Chris' target='_blank'>/everything/Chris</a> will return 'Fuck everything. - Chris'</td>
+                <td>Will return content of the form 'Have fun, :name. - :from', e.g. <a href='/you/Tom/Chris' target='_blank'>/you/Tom/Chris</a> will return 'Have Fun, Tom - Chris'</td>
             </tr>
 
             <tr>
                 <td>/everyone/:from</td>
                 <td>Will return content of the form 'Everyone can go and have fun. - :name', e.g. <a href='/everyone/Tom' target='_blank'>/everyone/Tom</a> will return 'Everyone can go and have fun. - Tom'</td>
-            </tr>
-
-            <tr>
-                <td>/shakespeare/:name/:from</td>
-                <td>Will return content of the form ':name, Thou clay-brained guts, thou knotty-pated fool, thou whoreson obscene greasy tallow-catch! - :from', e.g. <a href='/shakespeare/Falstaff/Prince%20Henry' target='_blank'>/shakespeare/Falstaff/Prince%20Henry</a> will return 'Falstaff, Thou clay-brained guts, thou knotty-pated fool, thou whoreson obscene greasy tallow-catch! - Prince Henry</td>
             </tr>
 
             <tr>
@@ -112,28 +88,8 @@
             </tr>
 
             <tr>
-                <td>/pink/:from</td>
-                <td>Will return content of the form 'Well, Fuck me pink. - :from'. e.g. <a href='/pink/Tom' target='_blank'>/pink/Tom</a></td>
-            </tr>
-
-            <tr>
-                <td>/life/:from</td>
-                <td>Will return content of the form 'Fuck my life. - :from', e.g. <a href='/life/Phil' target='_blank'>/life/Phil</a> will return 'Fuck my life. - Phil'. </td>
-            </tr>
-
-            <tr>
-                <td>/chainsaw/:name/:from</td>
-                <td>Will return content of the form 'Fuck me gently with a chainsaw, :name. Do I look like Mother Teresa? - :from', e.g. <a href='/chainsaw/Chris/Heather' target='_blank'>/chainsaw/Chris/Heather</a> will return 'Fuck me gently with a chainsaw, Chris. Do I look like Mother Teresa? - Heather'.</td>
-            </tr>
-
-            <tr>
-                <td>/:thing/:from</td>
-                <td>Will return content of the form 'Fuck :thing. - :from', e.g. <a href='/pineapples/%E2%99%A5%20Chris' target='_blank'>/pineapples/%E2%99%A5%20Chris</a> will return 'Fuck pineapples. - ♥ Chris' </td>
-            </tr>
-
-            <tr>
                 <td>/thanks/:from</td>
-                <td>Will return content of the form 'Fuck you very much. - :from'. </td>
+                <td>Will return content of the form 'thank you very much. - :from'. </td>
             </tr>
 
             <tr>
