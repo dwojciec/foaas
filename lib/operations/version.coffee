@@ -6,5 +6,5 @@ module.exports =
   register: (app, output, version) ->
     app.get '/version', (req, res) ->
       message = "Version #{version}"
-      subtitle = "FOAAS"
+      subtitle = "HFAAS"
       output(req, res, message, subtitle)

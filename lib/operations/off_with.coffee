@@ -1,6 +1,6 @@
 URL = "/off-with/:behavior/:from"
 module.exports =
-  name: "Fuck Off With"
+  name: "Have Fun With"
   url: URL
   fields: [
     {name: 'Behavior', field: 'behavior'}
@@ -9,6 +9,6 @@ module.exports =
 
   register: (app, output) ->
     app.get URL, (req, res) ->
-      message = "Fuck off with #{req.params.behavior}"
+      message = "have fun with #{req.params.behavior}"
       subtitle = "- #{req.params.from}"
       output(req, res, message, subtitle)
